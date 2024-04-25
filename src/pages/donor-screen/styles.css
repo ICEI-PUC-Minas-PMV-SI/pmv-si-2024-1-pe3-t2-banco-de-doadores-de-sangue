@@ -1,0 +1,234 @@
+.main-menu {
+  width: 100vw;
+  height: 170px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main-menu__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../public/assets/doc-images/woman-picture.jpeg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.main-menu__image-color {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #eb3738;
+  opacity: 0.83;
+  z-index: 2;
+}
+
+.main-menu__title {
+  z-index: 3;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  color: #ffffff;
+}
+.main-menu__action {
+  width: auto;
+  margin-left: 1rem;
+  height: 50px;
+  z-index: 3;
+  display: flex;
+}
+
+.main-menu__action__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  margin-right: 17px;
+}
+.main-menu__action__button {
+  width: 20px;
+  height: 20px;
+  background: #eb3738;
+  width: 57px;
+  height: 57px;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.main-menu__action__text {
+  padding-top: 7px;
+  font-size: 11px;
+  color: #ffffff;
+}
+.donor-info {
+  border-left: 2px solid #33a0ab;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.donor-info__data__title {
+  color: #514747;
+  margin-bottom: 0.3rem;
+  font-size: 14px;
+}
+
+.donor-info__data__text {
+  color: #514747;
+  margin-bottom: 0.3rem;
+  font-size: 14px;
+  max-width: 220px;
+}
+
+.donor-info__data__text > b {
+  font-weight: 800;
+}
+
+.donation-data {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.donation-data__you-re-not-a-donator {
+  width: 100%;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #33a0ab;
+  border-radius: 10px;
+}
+.donation-data__you-re-not-a-donator > p {
+  color: #33a0ab;
+  font-weight: 800;
+  text-align: center;
+}
+
+.donation-data__instruction {
+  text-align: center;
+  margin-top: 1em;
+  color: #33a0ab;
+  font-weight: 100;
+}
+
+.donation-data__header {
+  color: #514747;
+  padding-bottom: 1px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  border-bottom: 2px solid #33a0ab;
+  width: 100%;
+}
+
+.donation-data__container {
+  width: 100%;
+}
+.donation-data__container__donation-card {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #b9b3b3;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  font-size: 14px;
+  color: #514747;
+  cursor: pointer;
+}
+.register-section__form__p{
+  margin-top:4px;
+}
+.donation-data__container__donation-card__date {
+  padding: 5px;
+  border-right: 2px solid #33a0ab;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.donation-data__container__donation-card__confimed {
+  padding: 5px;
+  border-left: 2px solid #33a0ab;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  font-weight: 800;
+  color: #33a0ab;
+}
+
+.donation-data__container__donation-card__scheduled {
+  padding: 5px;
+  border-left: 2px solid #33a0ab;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  font-weight: 800;
+  color: #eb3738;
+}
+
+.donation-data__container__donation-card__address {
+  width: auto;
+}
+
+@media (min-width: 1000px) {
+  body{
+    display: flex;
+    flex-direction: row;
+    max-width:100vw;
+
+  }
+  .main-header {
+    display: none;
+  }
+  .main-menu{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 50vw;
+    
+  }
+  .main-menu__image, .main-menu__image-color{
+    display: none;
+  }
+  .main-menu__title{
+    color: #eb3738;
+  }
+
+  .main-menu__action__div{
+  }
+  .main-menu__action__button{
+    border: 2px solid #33a0ab;
+    height:100px;
+    width: 79px;
+  }
+  .main-menu__action__text{
+    color: #514747;
+    font-size: 16px;
+
+  }
+  .main{
+    width:80vw;
+  }
+  .donation-data__container{
+    max-height:50vh;
+    overflow: auto;
+  }
+
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <title>Tela do representante</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="../../styles/global.css" />
+  <link rel="stylesheet"
+    href="../../styles/shared.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/mobile-nav-bar/styles.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/input/styles.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/radio/styles.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/modal/styles.css" />
+  <link rel="stylesheet"
+    href="./style.css" />
+  <script src="scripts.js"
+    defer></script>
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="burger-menu">
+      <div class="btn-left"></div>
+      <div class="btn-right"></div>
+    </div>
+    <div class="nav-container__logo">
+      <div class="white-background-logo"></div>
+      <object data="../../public/assets/svg/logo.svg"></object>
+    </div>
+    <div class="nav-container__profile-image">
+      <img src="../../public/assets/icons/avatar-user.png"
+        alt="profile picture" />
+    </div>
+  </nav>
+  <section class="actions-section">
+    <div class="actions-section__image"></div>
+    <div class="actions-section__image-color"></div>
+    <div class="actions-container">
+      <h3 class="salute-representative">Bem<!-- vinda, Maria!--></h3>
+      <div class="actions-container__icons">
+        <button class="action"
+          id="edit-account-button">
+          <object data="../../public/assets/icons/edit-icon.png"></object>
+        </button>
+        <button class="action"
+          id="logout-account-button">
+          <object data="../../public/assets/icons/logout-icon.png"></object>
+        </button>
+        <button class="action"
+          id="delete-account-button">
+          <object data="../../public/assets/icons/trash-icon.png"></object>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="representative-info-section">
+    <div class="representative-info__data">
+      <h5 class="representative-info__data__title">Meus dados:</h5>
+    </div>
+  </section>
+  <section class="donators-section">
+    <h4>Doadores</h4>
+  </section>
+  <script src="../../commons/local-storage/index.js"></script>
+  <script src="../../commons/signin/index.js"></script>
+  <script src="../../commons/utils/input.js"></script>
+  <script src="../../commons/repository/users.js"></script>
+  <script src="../../commons/utils/verifyUser.js"></script>
+  <script src="../../commons/interface/delete-account-modal.js"></script>
+  <script src="../../commons/interface/edit-account-modal.js"></script>
+  <script src="index.js"></script>
+  <script src="script-donor.js"></script>
+  <script src="script-representative-data.js"></script>
+</body>
+
+</html>

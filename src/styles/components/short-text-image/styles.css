@@ -1,0 +1,32 @@
+.short-text-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 22.6rem;
+  margin-bottom: 2rem;
+}
+
+.short-text-image__image-container {
+  margin-bottom: 0.5rem;
+}
+
+.short-text-image > span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.12rem;
+  text-align: center;
+  color: #eb3738;
+  margin-bottom: 0.5rem;
+}
+
+.short-text-image > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.12rem;
+  text-align: center;
+  color: #514747;
+}

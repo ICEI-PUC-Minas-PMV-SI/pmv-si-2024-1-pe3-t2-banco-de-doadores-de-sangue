@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/shared.css" />
+    <link rel="stylesheet" href="../../styles/components/button/styles.css" />
+    <link rel="stylesheet" href="../../styles/components/input/styles.css" />
+    <link rel="stylesheet" href="../../styles/components/short-text-image/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styled-checkbox.css" />
+    <link rel="stylesheet" href="../../styles/components/menu-navegation-desktop/styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <section class="lateral-menu">
+      <div class="lateral-menu-header">
+        <div class="lateral-menu-header__logo-container">
+          <object data="../../public/assets/svg/logo.svg"></object>
+        </div>
+        <span class="lateral-menu-header__logo-text">Banco de doadores de sangue</span>
+      </div>
+      <aside class="lateral-menu-content">
+        <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+        <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+        <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'">
+          Quem pode doar?</a
+        >
+        <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'"
+          >Processo de doação</a
+        >
+        <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/blood-types'">
+          Tipos de sangue</a
+        >
+        <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'"
+          >Mitos e verdades</a
+        >
+        <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+      </aside>
+    </section>
+    <header class="main-header">
+      <div class="main-header__image"></div>
+      <div class="main-header__image-color"></div>
+      <div class="main-header__content">
+        <h1 class="main-header__content__title">Cadastro de informações complementares</h1>
+        <div class="main-header__logo-container">
+          <object data="../../public/assets/svg/logo.svg"></object>
+        </div>
+      </div>
+    </header>
+    <main class="register">
+      <section class="register-section">
+        <h2 class="register-section__title">Entre com seus dados abaixo</h2>
+        <form class="register-section__form">
+          <input class="primary-input" id="weight" placeholder="Peso" />
+          <p class="register-section__check-text">Qual sua data de nascimento?</p>
+          <input class="primary-input" id="born-at" placeholder="Data de nascimento" type="date" />
+          <p class="register-section__check-text">Data da ultima doação?</p>
+          <input class="primary-input" id="last-donation" placeholder="Data da ultima doação" type="date" />
+          <input class="primary-input" id="city" placeholder="Cidade onde mora atualmente" />
+          <p class="register-section__check-text">Qual seu tipo sanguineo?</p>
+          <select class="primary-input" id="blood-type" id="tipo-sanguineo" name="tipo-sanguineo">
+            <option value="Não sei/Não informado">Não sei</option>
+            <option value="O+">O+</option>
+            <option value="0-">0-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+          <div class="register-section__check">
+            <p class="register-section__check-text">Está se sentindo bem?</p>
+            <label class="custom-checkbox">
+              Sim
+              <input type="checkbox" name="checkbox1" id="checkbox-is-health" onchange="uncheckOther(this)" />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="custom-checkbox">
+              Não
+              <input type="checkbox" name="checkbox2" id="checkbox-is-not-health" onchange="uncheckOther(this)" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </form>
+      </section>
+      <section class="register-section-button">
+        <button class="primary-button" id="submit-additional-information" class="register-section__button">
+          Cadastrar
+        </button>
+        <a class="register-section__text" onclick="window.location.href='/index.html'">Voltar para a home</a>
+      </section>
+    </main>
+  </body>
+  <script src="../../commons/signin/index.js"></script>
+  <script src="../../commons/repository/users.js"></script>
+  <script src="../../commons/utils/verifyUser.js"></script>
+  <script src="../../commons/local-storage/index.js"></script>
+  <script src="script-info.js"></script>
+</html>

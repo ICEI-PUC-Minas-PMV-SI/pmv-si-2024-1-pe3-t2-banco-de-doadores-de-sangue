@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.lateral-menu-content__item {
+  text-decoration: none;
+  color: black;
+  margin-left: 3%;
+}
+
+body {
+  font-family: "Poppins";
+  margin-top: 1px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  color: #514747;
+  transform: scale(1.5);
+  margin-top: 2.5%;
+  margin-left: 1%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+nav {
+  background-color: #eb3738;
+  width: 300px;
+  height: 50%;
+  left: -300px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+nav::after {
+  content: "Banco de doadores de sangue";
+  color: white;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 4%;
+  font-family: "Poppins";
+}
+
+input[type="checkbox"]:checked ~ nav {
+  transform: translateX(300px);
+}
+
+ul {
+  background-color: #33a0ab;
+  list-style: none;
+  top: 100px;
+  position: absolute;
+  width: 100%;
+}
+
+.lateral-menu-content__item {
+  display: block;
+  padding: 20px 5px;
+  color: white;
+}
+
+.lateral-menu-content__item:hover {
+  background-color: #33a0ab;
+  color: black;
+}
+
+label {
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: 3%;
+  border-radius: 50%;
+  border-color: white;
+}
+
+.foto {
+  width: 40px;
+  height: 40px;
+  float: right;
+  position: absolute;
+  top: 2%;
+  right: 2px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.foto::after {
+  content: "Maria";
+  color: #514747;
+  position: absolute;
+  font-family: "poppins";
+}
+
+hr {
+  border-color: #33a0ab;
+  background-color: #33a0ab;
+  height: 8px;
+  width: 100%;
+  margin-top: 3%;
+  text-shadow: 2px 2px 2px #514747;
+}
+
+h1 {
+  color: red;
+  font-weight: 200;
+  font-family: "poppins";
+  font-style: normal;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 30px;
+}
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+h8,
+h9,
+h10 {
+  color: #928b8b;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "poppins";
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+p {
+  color: #201c1c;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "poppins";
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 5px;
+}
+div {
+  color: red;
+  font-size: 120%;
+  font-family: "poppins";
+  font-style: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#introduction {
+  color: black;
+  font-size: 10px;
+  font-family: "poppins";
+  font-style: normal;
+  line-height: 170%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+a:hover {
+  color: red;
+}
+a {
+  font-size: 120%;
+  color: #33a0ab;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: justify;
+  text-align: center;
+}
+.saiba-mais {
+}
+.meu-paragrafo {
+  margin-left: 120px;
+  margin-right: 120px;
+}

@@ -1,0 +1,293 @@
+.main-header {
+  height: 40vh;
+  position: relative;
+}
+
+.main-header__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("src/public/assets/doc-images/woman-picture.jpeg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.main-header__image-color {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #eb3738;
+  opacity: 0.83;
+  z-index: 2;
+}
+
+.main-header__content {
+  padding: 18px 25px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+
+.main-header__content__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.main-header__content__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-header__green-circle {
+  position: absolute;
+  left: calc(50vw - 68px);
+  bottom: -68px;
+  width: 136px;
+  height: 136px;
+  background: #33a0ab;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.main-header__logo-container {
+  position: absolute;
+  width: 119px;
+  height: 119px;
+  left: calc(50vw - 59.5px);
+  bottom: -59.5px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 3;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.main-header__logo-container > object {
+  margin: auto;
+}
+
+.register-section {
+  padding: 0 1.5rem 2rem;
+  background-color: #ffffff;
+  border-top: 8.5px solid #33a0ab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-section__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: #eb3738;
+  margin: 5rem 5rem 4rem;
+}
+
+.register-section__login-container {
+  margin: auto;
+  height: 3rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #33a0ab;
+}
+
+.register-section__login-container > a {
+  color: #33a0ab;
+  text-decoration: none;
+}
+
+.motives-section {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motives-section__content-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.motives-section__content-container .short-text-image {
+  margin: 0 1.25rem 2rem;
+}
+
+.allowed-donation-section {
+  background-color: #eb3738;
+  padding-bottom: 2rem;
+}
+
+.allowed-donation-section p,
+.allowed-donation-section h3 {
+  color: #ffffff;
+}
+
+.allowed-donation-section__intro {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.allowed-donation-section__intro .image-container {
+  margin-bottom: 1.5rem;
+}
+
+.allowed-donation-section__intro__text {
+  max-width: 22.5rem;
+  margin-bottom: 2rem;
+}
+
+.donation-process-section {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation-process-section > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.12rem;
+  text-align: center;
+  max-width: 17.5rem;
+  color: #514747;
+  margin-bottom: 5.25rem;
+}
+
+.donation-process-section__intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 2rem;
+}
+
+.donation-process-section__intro__text {
+  max-width: 22.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.donation-process-section__content-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation-process-section__content-container > .short-text-image {
+  margin: 0 1rem 2rem;
+}
+
+.extra-info-section {
+  background-color: #eb3738;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.extra-info-section p,
+.extra-info-section h3 {
+  color: #ffffff;
+}
+
+.extra-info-section article {
+  max-width: 23.75rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-info-section article p {
+  margin-bottom: 1.2rem;
+}
+
+.about-us-section {
+  padding-top: 1.2rem;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us-section article {
+  max-width: 23.75rem;
+}
+
+body > footer {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .register-section {
+    padding: 0 calc((100vw - 380px) / 2) 2.5rem;
+  }
+
+  .donation-process-section__intro {
+    margin-bottom: 5.5rem;
+    padding-top: 4rem;
+  }
+
+  .extra-info-section {
+    flex-direction: row;
+  }
+
+  .about-us-section {
+    padding-top: 4rem;
+    height: auto;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}

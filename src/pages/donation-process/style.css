@@ -1,0 +1,132 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 3%;
+}
+
+body {
+  @media screen {
+    margin-top: 1px;
+    font-family: "Poppins";
+  }
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  color: #514747;
+  transform: scale(1.5);
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+nav {
+  background-color: #eb3738;
+  width: 300px;
+  height: 50%;
+  left: -300px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+nav::after {
+  content: "Banco de doadores de sangue";
+  color: white;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 4%;
+  font-family: "Poppins";
+}
+
+input[type="checkbox"]:checked ~ nav {
+  transform: translateX(300px);
+}
+
+ul {
+  background-color: #33a0ab;
+  list-style: none;
+  top: 70px;
+  position: absolute;
+  width: 100%;
+}
+
+a {
+  display: block;
+  padding: 20px 5px;
+  color: white;
+}
+
+a:hover {
+  background-color: #33a0ab;
+  color: black;
+}
+
+label {
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-logo {
+  position: absolute;
+  float: center;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: 3%;
+  border-radius: 50%;
+  border-color: white;
+}
+
+.image-container {
+  border-radius: 50%;
+  border-color: white;
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.image-container::after {
+  content: "Maria";
+  display: block;
+  margin-top: 3%;
+  text-align: center;
+  color: #514747;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+  font-family: "Poppins";
+  color: #eb3738;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #514747;
+}
+
+hr {
+  border-color: #33a0ab;
+  background-color: #33a0ab;
+  height: 6px;
+  width: 100%;
+  margin-top: 4%;
+  text-shadow: 1px 1px 1px #514747;
+}
+
+.image-doacao {
+  width: 60%;
+  height: 60%;
+  margin-left: 22%;
+  margin-right: 4%;
+  margin-top: 2%;
+}

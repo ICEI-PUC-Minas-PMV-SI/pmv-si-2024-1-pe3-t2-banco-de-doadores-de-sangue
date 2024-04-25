@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <title>Tela do doador</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="../../styles/global.css" />
+  <link rel="stylesheet"
+    href="../../styles/shared.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/button/styles.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/input/styles.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/radio/styles.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/short-text-image/styles.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/menu-navegation-desktop/styles.css" />
+  <link rel="stylesheet"
+    href="./styles.css" />
+  <link rel="stylesheet"
+    href="./styles-modal.css" />
+  <link rel="stylesheet"
+    href="./styles-header.css" />
+  <link rel="stylesheet"
+    href="../../styles/components/modal/styles.css" />
+</head>
+
+<body>
+  <section class="lateral-menu">
+    <div class="lateral-menu-header">
+      <div class="lateral-menu-header__logo-container">
+        <object data="../../public/assets/svg/logo.svg"></object>
+      </div>
+      <span class="lateral-menu-header__logo-text">Banco de doadores de sangue</span>
+    </div>
+    <aside class="lateral-menu-content">
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/src/pages/representative-screen'">Canal dos representantes</a>
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/src/pages/who-can-donate'">
+        Quem pode doar?</a>
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/src/pages/donation-process'">Processo de doação</a>
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/src/pages/blood-types'">
+        Tipos de sangue</a>
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e verdades</a>
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+
+      <a class="lateral-menu-content__item"
+        onclick="window.location.href='/index.html'">Voltar para a home</a>
+    </aside>
+  </section>
+  <header class="main-header">
+    <div class="main-header__menu"
+      id="open-modal-navigate">
+      <object data="../../public/assets/icons/hamburguer-menu.png"></object>
+    </div>
+    <div class="main-header__logo">
+      <div class="main-header__logo__div">
+        <object data="../../public/assets/svg/logo.svg"></object>
+      </div>
+    </div>
+    <div class="main-header__icon">
+      <div class="main-header__icon__image"></div>
+      <p class="main-header__icon__text"></p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main-menu">
+      <div class="main-menu__image"></div>
+      <div class="main-menu__image-color"></div>
+      <h1 class="main-menu__title">Informações do doador</h1>
+      <div class="main-menu__action">
+        <div class="main-menu__action__div">
+          <button class="main-menu__action__button"
+            id="edit-account-button">
+            <object data="../../public/assets/icons/edit-icon.png"></object>
+          </button>
+          <p class="main-menu__action__text">Editar Perfil</p>
+        </div>
+        <div class="main-menu__action__div">
+          <button class="main-menu__action__button"
+            id="delete-account-button">
+            <object data="../../public/assets/icons/trash-icon.png"></object>
+          </button>
+          <p class="main-menu__action__text">Encerrar</p>
+        </div>
+        <div class="main-menu__action__div"
+          id="schedule-div">
+          <button class="main-menu__action__button"
+            id="open-modal-schedule-donation">
+            <object data="../../public/assets/icons/schedule-icon.png"></object>
+          </button>
+          <p class="main-menu__action__text">Agendar</p>
+        </div>
+      </div>
+    </section>
+    <div id="modal-edit-schedule"
+      class="modal">
+      <div class="modal-content">
+        <div class="modal-content__div">
+          <h1 class="modal-content__title">Editar agendamento</h1>
+
+          <div class="modal-content__div-button">
+            <button class="modal-content__div-button__cancel"
+              id="edit-schedule-modal-close__cancel">
+              Cancelar doação
+            </button>
+            <button class="modal-content__div-button__confirm"
+              id="edit-schedule-modal-close__confirm">
+              Confirmar recebimento
+            </button>
+            <button class="modal-content__div-button__cancel"
+              id="edit-schedule-modal-close__close">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-navigate"
+      class="modal">
+      <div class="modal-content__navigate">
+        <div class="modal-navigate-content__div">
+          <aside class="lateral-menu-content">
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/representative-screen'">Canal dos representantes</a>
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/who-can-donate'">
+              Quem pode doar?</a>
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/donation-process'">Processo de doação</a>
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/blood-types'">
+              Tipos de sangue</a>
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e verdades</a>
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/index.html'">Voltar para a home</a>
+
+            <span class="lateral-menu-content__close">Fechar menu</span>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <section class="donor-info">
+      <div class="donor-info__data">
+        <h3 class="donor-info__data__title">Dados do doador:</h3>
+      </div>
+    </section>
+    <section class="donation-data"></section>
+  </main>
+  <script src="../../commons/local-storage/index.js"></script>
+  <script src="../../commons/utils/UUID.js"></script>
+  <script src="../../commons/repository/users.js"></script>
+  <script src="../../commons/signin/index.js"></script>
+  <script src="../../commons/utils/input.js"></script>
+  <script src="../../commons/interface/delete-account-modal.js"></script>
+  <script src="../../commons/interface/edit-account-modal.js"></script>
+  <script src="../../commons/interface/schedule-donation-modal.js"></script>
+  <script src="script-donor.js"></script>
+  <script src="script-header.js"></script>
+  <script src="script-modal.js"></script>
+  <script src="../../commons/utils/verifyUser.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

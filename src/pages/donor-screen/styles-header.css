@@ -1,0 +1,54 @@
+.main-header {
+  width: 100vw;
+  height: 75px;
+  background-color: #ffffff;
+  color: #514747;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position:relative;
+}
+
+.main-header__menu{
+  cursor: pointer;
+}
+.main-header__icon{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.main-header__logo{
+  position: relative;
+}
+.main-header__logo__div{
+}
+.main-header__logo__div > object{
+  width:55px;
+  header:55px;
+}
+.main-header__icon{
+  height:100%;
+}
+.main-header__icon__image{
+  width:50px;
+  height:50px;
+  object-fit: contain;
+  background-image: url("../../public/assets/icons/avatar-user.png");
+  background-size: cover;
+  border-radius:50px;
+}
+.main-header__icon__text{
+  position:absolute;
+  bottom:1px;
+  right:4px;
+  
+}
+@media (min-width: 1000px) {
+  .main-header {
+    display: none;
+  }

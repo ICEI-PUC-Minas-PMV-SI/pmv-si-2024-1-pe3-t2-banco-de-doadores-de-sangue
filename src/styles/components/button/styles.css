@@ -1,0 +1,21 @@
+.primary-button, .secondary-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 23.75rem;
+  height: 5.6rem;
+  background: #eb3738;
+  border: 4px solid #514747;
+  border-radius: 0.9rem;
+  margin: 1.2rem 0;
+  cursor: pointer;
+}
+
+.secondary-button {
+  border: 4px solid #ffffff;
+}

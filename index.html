@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco Vermelho</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/global.css" />
+  <link rel="stylesheet" href="./src/styles/shared.css" />
+  <link rel="stylesheet" href="./src/styles/components/button/styles.css" />
+  <link rel="stylesheet" href="./src/styles/components/short-text-image/styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__image"></div>
+    <div class="main-header__image-color"></div>
+    <div class="main-header__content">
+      <h1 class="main-header__content__title">Já salvou uma vida hoje?</h1>
+      <span class="main-header__content__text">Faça isso juntando-se ao</span>
+    </div>
+    <div class="main-header__green-circle"></div>
+    <div class="main-header__logo-container">
+      <object data="src/public/assets/svg/logo.svg"> </object>
+    </div>
+  </header>
+  <section class="register-section">
+    <h2 class="register-section__title">Banco de doadores de sangue</h2>
+    <button class="primary-button" onclick="window.location.href='/src/pages/signup/'">Cadastre-se</button>
+    <div class="register-section__login-container">
+      <span>Já é doador?</span>
+      <a onclick="window.location.href='/src/pages/signin/'">Faça seu login!</a>
+    </div>
+  </section>
+  <section class="motives-section section-default">
+    <h3 class="section-title">Por que doar?</h3>
+    <div class="motives-section__content-container">
+      <div class="short-text-image">
+        <span>Falta de doadores</span>
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/blood-drop.svg"> </object>
+        </div>
+        <p>
+          O Brasil tem um grande deficit de doadores de sangue, e a situação
+          só piorou com a covid-19. Uma unica doação pode ajudar até 4 pessoas
+          diferentes.
+        </p>
+      </div>
+      <div class="short-text-image">
+        <span>Salvar vidas</span>
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/red-person.svg"> </object>
+        </div>
+        <p>
+          As pessoas que recebem transfusões de sangue incluem pacientes com
+          câncer, vítimas de acidentes, pacientes em tratamento de doenças
+          crônicas e cirurgias de emergência.
+        </p>
+      </div>
+      <div class="short-text-image">
+        <span>Beneficios a saúde</span>
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/red-heart.svg"> </object>
+        </div>
+        <p>
+          Alguns estudos mostram que a doação regular de sangue pode ajudar a
+          reduzir o risco de doenças cardiovasculares, . Além disso, a doação
+          de sangue ajuda a estimular a produção de novas células sanguíneas,
+          o que pode ajudar a manter um sistema sanguíneo saudáve.
+        </p>
+      </div>
+    </div>
+    <button class="primary-button"onclick="window.location.href='/src/pages/why-donate'">Saiba mais!</button>  
+  </section>
+  <section class="allowed-donation-section section-default">
+    <div class="allowed-donation-section__intro">
+      <div class="allowed-donation-section__intro__text">
+        <h3 class="section-title">Quem pode doar</h3>
+        <p class="generic-text">
+          Sempre é feito um exame de sangue antes da doação, afim de assegurar que a pessoa realmente possa doar, mesmo
+          atendendo as pré requisitos.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="src/public/assets/doc-images/woman-picture.jpeg" alt="A doctor holding a clipboard">
+      </div>
+    </div>
+    <button class="secondary-button" onclick="window.location.href='/src/pages/who-can-donate'">Saiba mais!</button>
+  </section>
+  <section class="donation-process-section section-default">
+    <div class="donation-process-section__intro">
+      <div class="image-container">
+        <img src="src/public/assets/doctor.jpeg" alt="A doctor holding a clipboard">
+      </div>
+      <div class="donation-process-section__intro__text">
+        <h3 class="section-title">Processo de doação de sangue</h3>
+        <p class="generic-text">
+          A doação de sangue é um processo seguro e importante que pode salvar vidas. Antes de doar, o doador passa por
+          uma triagem para garantir que está apto e saudável para doar. Em seguida, é feita a coleta do sangue, que leva
+          cerca de 10 a 15 minutos. Depois, o sangue é armazenado e testado para garantir a segurança do receptor. Por
+          fim, o sangue doado é distribuído para os hospitais e clínicas para ser utilizado em transfusões.
+        </p>
+      </div>
+    </div>
+    <p>
+      Veja as etapas do processo, da coleta até a transfusão abaixo:
+    </p>
+    <div class="donation-process-section__content-container">
+      <div class="short-text-image">
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/number-one.svg"> </object>
+        </div>
+        <span>Triagem</span>
+        <p>
+          Antes de doar, o doador é avaliado por um profissional de saúde para garantir que está apto e saudável para
+          doar sangue.
+        </p>
+      </div>
+      <div class="short-text-image">
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/numer-two.svg"> </object>
+        </div>
+        <span>Coleta</span>
+        <p>
+          O sangue é coletado por meio de uma agulha inserida em uma veia do braço do doador. O processo de coleta dura
+          cerca de 10 a 15 minutos.
+        </p>
+      </div>
+      <div class="short-text-image">
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/number-three.svg"> </object>
+        </div>
+        <span>Armazenamento</span>
+        <p>
+          O sangue doado é armazenado em um local seguro para manter sua qualidade e preservar suas propriedades.
+        </p>
+      </div>
+      <div class="short-text-image">
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/number-four.svg"> </object>
+        </div>
+        <span>Testes</span>
+        <p>
+          O sangue é testado para garantir que seja seguro para o receptor. Os testes incluem verificações de doenças
+          transmitidas pelo sangue e compatibilidade com o tipo sanguíneo do receptor.
+        </p>
+      </div>
+      <div class="short-text-image">
+        <div class="short-text-image__image-container">
+          <object data="src/public/assets/svg/number-five.svg"> </object>
+        </div>
+        <span>Distribuição</span>
+        <p>
+          O sangue doado é distribuído para hospitais e clínicas para uso em transfusões e tratamentos médicos que podem
+          salvar vidas.
+        </p>
+      </div>
+    </div>
+
+    <button class="primary-button" onclick="window.location.href='/src/pages/donation-process'">Saiba mais!</button>
+  </section>
+  <section class="extra-info-section section-default">
+    <article>
+      <h3 class="section-title">Mitos e verdades sobre doação</h3>
+      <p class="generic-text">
+        Existem muitas informações equivocadas sobre o processo de doação de sangue que podem levar as pessoas a
+        evita-lo. Um dos principais mitos é que a doação de sangue é dolorosa e pode causar danos ao doador. Na verdade,
+        o processo é relativamente indolor e seguro, e não há riscos significativos associados à doação de sangue. Outro
+        mito comum é que as pessoas com tatuagens ou piercings não podem doar sangue, mas isso não é verdade. Desde que
+        as tatuagens e piercings tenham sido realizados em estabelecimentos licenciados e regulamentados, o doador pode
+        ser elegível para doar sangue após um período de espera.
+        <br /><br />
+        É importante entender o processo a doação de sangue. Ao fazer isso, podemos incentivar mais pessoas a doar
+        sangue e ajudar a garantir um suprimento adequado de sangue seguro para aqueles que precisam. Doar sangue é uma
+        forma significativa e gratificante de ajudar a salvar vidas e apoiar a saúde pública.
+      </p>
+      <button class="secondary-button" onclick="window.location.href='/src/pages/myths-and-truths'">Saiba mais!</button>
+    </article>
+    <article>
+      <h3 class="section-title">Tipos de sangue</h3>
+      <p class="generic-text">
+        Os tipos de sangue são importantes para a compatibilidade de doações de sangue e transplantes de órgãos. Cada
+        tipo sanguíneo tem uma combinação única de antígenos e anticorpos que determinam se o sangue é compatível com
+        outro tipo sanguíneo. Por exemplo, o tipo sanguíneo O- é considerado o doador universal, pois não possui
+        antígenos A ou B e não tem o fator Rh, o que significa que pode ser doado para qualquer pessoa,
+        independentemente do tipo sanguíneo. Por outro lado, o tipo sanguíneo AB+ é considerado o receptor universal,
+        pois possui antígenos A e B e o fator Rh, o que significa que pode receber sangue de qualquer tipo sanguíneo.
+        Conhecer seu tipo sanguíneo pode ser útil em emergências médicas e em casos de doações de sangue e transplantes
+        de órgãos.
+      </p>
+      <button class="secondary-button" onclick="window.location.href='/src/pages/blood-types'">Saiba mais!</button>
+      </article>
+    </section>
+    <section class="about-us-section section-default">
+      <article>
+         <h3 class="section-title">Quem somos</h3>
+         <p class="generic-text">
+        Somos estudantes de sistemas de informação na puc minas interessados no tema. Desenvolvemos essa aplicação em
+        equipe no primeiro semestre da universidade. Você pode saber mais sobre nós clicando no botão abaixo.
+        </p>
+      </article>
+      <button class="primary-button" onclick="window.location.href='/src/pages/about-us'">Saiba mais!</button>
+    </section>
+    <footer class="generic-text">© 2023 Banco de sangue</footer>
+  </body>
+
+</html>

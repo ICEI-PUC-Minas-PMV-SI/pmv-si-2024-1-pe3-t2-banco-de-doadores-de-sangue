@@ -1,0 +1,21 @@
+.primary-input {
+  height: 35px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  border-style: none;
+  border: 1px solid #514747;
+  border-radius: 8px;
+}
+
+.primary-input--error {
+  border: 1px solid #eb3738;
+}
+
+.input-error-message {
+  margin: 0 0 6px 2px;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #eb3738;
+}
