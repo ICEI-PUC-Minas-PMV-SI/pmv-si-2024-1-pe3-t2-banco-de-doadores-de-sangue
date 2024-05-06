@@ -1,0 +1,32 @@
+.dropdown {
+  position: relative;
+  width: 300px;
+}
+
+#inputField {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  display: none;
+  background-color: white;
+  z-index: 1000;
+}
+
+.dropdown-list div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-list div:hover {
+  background-color: #f0f0f0;
+}

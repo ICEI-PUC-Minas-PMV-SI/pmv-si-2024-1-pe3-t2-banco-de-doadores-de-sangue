@@ -1,0 +1,236 @@
+.main-header {
+  height: 55vh;
+  position: relative;
+  min-height: 400px;
+}
+
+.main-header__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('../../public/assets/doc-images/woman-picture.jpeg');
+  background-size: cover;
+  z-index: 1;
+}
+
+.main-header__image-color {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #eb3738;
+  opacity: 0.83;
+  z-index: 2;
+}
+
+.main-header__content {
+  padding: 18px 25px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+
+.main-header__content__title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0.7rem;
+}
+
+.main-header__content__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  width: 80%;
+  color: #ffffff;
+}
+
+.main-header__logo-container {
+  width: 100px;
+  height: 100px;
+  left: calc(50vw - 59.5px);
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 3;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.main-header__logo-container > object {
+  margin: auto;
+  width: 65px;
+}
+
+.register {
+  height: 40vh;
+}
+.register-section {
+  bottom: 100px;
+  /* padding: 0 1.5rem 0rem; */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  position: relative;
+  z-index: 3;
+  border-top: 4px solid #514747;
+}
+.register-section__title {
+  display: none;
+}
+
+.register-section__form {
+  position: absolute;
+  bottom: 10%;
+  width: 90%;
+  max-width: 23.75rem;
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #33a0ab;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: -7px 5px 30px -15px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -7px 5px 30px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 5px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.register-section__form-input-cellphone-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nested-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.nested-input.ddd {
+  width: 30%;
+}
+
+.nested-input.phone {
+  width: 60%;
+}
+
+.register-section__form__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #514747;
+}
+
+.register-section__form__footer__text {
+  padding-top: 10px;
+  color: #33a0ab;
+  cursor: pointer;
+}
+
+.register-section__text {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-section-button {
+  position: relative;
+  bottom: 100px;
+  padding: 0 1.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 3;
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  .main-header {
+    height: 100%;
+    max-height: 100vh;
+  }
+  .main-header__content {
+    display: flex;
+    justify-container: center;
+    align-items: center;
+    padding-top: 28vh;
+    width: 60vw;
+  }
+  .register {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-section {
+    width: 400px;
+    position: static;
+    min-height: 0;
+    border: 0;
+  }
+
+  .register-section__title {
+    display: inline-block;
+    margin-bottom: 55px;
+    width: 270px;
+    text-align: center;
+    color: #eb3738;
+  }
+  .register-section__form {
+    position: static;
+    width: 100%;
+  }
+  .register-section-button {
+    position: static;
+    width: 380px;
+  }
+}
+@media (min-width: 1400px) {
+  .main-header__content {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 380px) {
+  .register-section__form {
+    bottom: 100px;
+  }
+  .register-section {
+    bottom: 0px;
+  }
+}

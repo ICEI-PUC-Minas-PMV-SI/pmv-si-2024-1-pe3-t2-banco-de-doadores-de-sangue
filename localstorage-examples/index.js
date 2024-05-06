@@ -15,7 +15,7 @@ function generateUUID() {
 // Função para obter o banco de dados do localStorage
 function getDatabase() {
   const databaseString = localStorage.getItem('base-blood-user-db');
-  return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
+  return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [], donationCenters: []};
 }
 
 // Função para salvar o banco de dados no localStorage
@@ -323,3 +323,27 @@ buttonDeleteRepresentative.addEventListener('click', function() {
     deleteRepresentative('f22bf87c-68d9-49db-9899-2f545ce49b3f')
     console.log('delete-representative!');
 });
+
+function createDonationCenter(newDonationCenter) {
+  const database = getDatabase()
+  const donationCenterId = generateUUID();
+  newDonationCenter.id = donationCenterId;
+  database.donationCenters.push(newDonationCenter);
+  saveDatabase(database);
+}
+const buttonDonationCenter = document.getElementById('create-donation-center');
+console.log(buttonDonationCenter)
+buttonDonationCenter.addEventListener('click', function() {
+  const mockdonation = { 
+    name: 'donors center test',
+    address: {
+      bloodDonorCenter: 'Hospital de nova hamburgo',
+      street: 'Rua Maria Oliveira',
+      number: 12,
+      neighborhood: 'center',
+      city: 'Santa Maria',
+      state: 'RS'                
+    } 
+}
+createDonationCenter(mockdonation)
+})

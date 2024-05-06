@@ -61,7 +61,7 @@ const getPayloadFromEvent = (event) => {
     ddd,
     password,
     passwordConfirm,
-    isRepresentative: false,
+    isRepresentative: true,
   };
 };
 
