@@ -1,11 +1,15 @@
 const userDBKey = 'base-blood-user-db';
 
 const getAllUsers = () => {
-  return getItemLocalStorage(userDBKey) || [];
+  const data = getItemLocalStorage(userDBKey)?.users || [];
+  return data;
 };
 
 const updateAllUsers = (users) => {
-  setItemLocalStorage(userDBKey, users);
+  console.log('aquiiii')
+  const body = getItemLocalStorage(userDBKey)
+  body.users = users
+  setItemLocalStorage(userDBKey, body);
 };
 
 const createUser = (user) => {

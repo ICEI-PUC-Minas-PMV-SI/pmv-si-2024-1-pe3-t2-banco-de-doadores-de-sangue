@@ -14,7 +14,7 @@
 
 const getDatabase = () =>  {
   const databaseString = localStorage.getItem('base-blood-user-db');
-  return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
+  return databaseString ? JSON.parse(databaseString) : {donationCenters: []};
 }
 
 const saveDatabase = (database) => {
@@ -24,12 +24,12 @@ const saveDatabase = (database) => {
 
 function getDonationCenters() {
   const database = getDatabase();
-  return database.donationCenters;
+  return database.donationCenters || [];
 }
 
 const donationCenters = getDonationCenters()
+
 const donationCentersName =  donationCenters.map(donationCenter => donationCenter.name);
-  
 const inputField = document.getElementById('inputField');
 const dropdownList = document.getElementById('dropdownList');
 
@@ -67,7 +67,6 @@ function populateDropdown(donationCentersName) {
 
 // Função para filtrar os itens com base no texto digitado no campo de entrada
 function filterItems() {
-  console.log('filterItems')
     const query = inputField.value.toLowerCase();
     let filteredItems = donationCentersName.filter(item => item.toLowerCase().includes(query));
     filteredItems.push('Criar banco de sangue')

@@ -1,3 +1,12 @@
+function generateUUID() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0,
+        v = c === 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+  
   const inputCep = document.querySelector("input[name='zipCode']")
   inputCep.addEventListener("input", (event) => {
     const { value } = event.target;
@@ -46,10 +55,12 @@ function buscarDadosCep(cep) {
 
 
 const saveDonationCenterForm = document.getElementById('modal-register-donation-center-form')
-  saveDonationCenterForm.addEventListener("click", (event) =>{
+let donationCenter  
+
+saveDonationCenterForm.addEventListener("submit", (event) =>{
     event.preventDefault();
     const {name, city,zipCode, street, neighborhood, state, number} = saveDonationCenterForm.elements
-    const donationCenter = {
+    donationCenter = {
       name: name?.value,
       city: city?.value,
       zipCode: zipCode?.value,
@@ -58,4 +69,24 @@ const saveDonationCenterForm = document.getElementById('modal-register-donation-
       state: state?.value,
       number: number?.value
     }
+
+    if(zipCode.value && zipCode.value !== '' &&  !donationCenter.name){
+      alert("Preencha todos os campos")
+      return;
+    }
+    else if(zipCode.value && zipCode.value !== '' && donationCenter.name){
+      const database = getDatabase();
+      donationCenter.id = generateUUID();
+      if(!database.donationCenters) database.donationCenters = []
+      database.donationCenters.push(donationCenter)
+      setItemLocalStorage('base-blood-user-db', database);
+
+    alert("Banco de sangue criado com sucesso!")
+  
+    const inputDonationCenter = document.getElementById('inputField');
+    inputDonationCenter.value = donationCenter.name;
+
+    const modalDiv = document.getElementById('modal-register-donation-center');
+    modalDiv.style.display = "none";
+  }
   })
