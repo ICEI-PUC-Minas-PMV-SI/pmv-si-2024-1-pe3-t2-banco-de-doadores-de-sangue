@@ -1,6 +1,5 @@
 .dropdown {
   position: relative;
-  width: 300px;
 }
 
 #inputField {
@@ -29,4 +28,10 @@
 
 .dropdown-list div:hover {
   background-color: #f0f0f0;
+}
+
+#dropdown-label {
+  margin-top: 4px;
+  color: #666;
+  fornt-size: 12px;
 }

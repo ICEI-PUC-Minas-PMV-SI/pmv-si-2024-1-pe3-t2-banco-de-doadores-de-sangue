@@ -39,7 +39,7 @@
     <div class="main-header__image"></div>
     <div class="main-header__image-color"></div>
     <div class="main-header__content">
-      <h1 class="main-header__content__title">Cadastro</h1>
+      <h1 class="main-header__content__title">Cadastro de representantes</h1>
       <div class="main-header__logo-container">
         <object data="../../public/assets/svg/logo.svg"></object>
       </div>
@@ -137,14 +137,15 @@
           name="passwordConfirm"
           onkeydown="removeErrorOnKeydown(event)" />
 
-        <label for="dropdown">Qual o seu banco de sangue?</label>
+        <label id='dropdown-label'
+          for="dropdown">Qual o seu banco de sangue?</label>
         <div class="dropdown">
           <input type="text"
+            class="primary-input"
             id="inputField"
             placeholder="Digite para filtrar...">
           <div id="dropdownList"
             class="dropdown-list">
-            <!-- Os itens disponíveis na lista -->
           </div>
         </div>
 

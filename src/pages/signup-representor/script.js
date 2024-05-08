@@ -1,17 +1,3 @@
-// Os itens disponíveis para filtrar
-
-// { 
-//     name: 'Banco de sangue do hospital de Santa Maria',
-//     address: {
-//       bloodDonorCenter: 'Hospital de nova hamburgo',
-//       street: 'Rua Maria Oliveira',
-//       number: 12,
-//       neighborhood: 'center',
-//       city: 'Santa Maria',
-//       state: 'RS'                
-//     } 
-// }
-
 const getDatabase = () =>  {
   const databaseString = localStorage.getItem('base-blood-user-db');
   return databaseString ? JSON.parse(databaseString) : {donationCenters: []};

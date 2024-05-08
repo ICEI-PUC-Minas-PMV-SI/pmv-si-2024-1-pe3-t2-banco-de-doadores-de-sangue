@@ -29,7 +29,7 @@ function setAddressDataToInputs(cep){
         inputCity.value = cep.localidade
         inputStreet.value = cep.logradouro
         inputNeighborhood.value = cep.bairro
-        inputState.value =  "teste"
+        inputState.value =  cep.uf
       }
 }
 
@@ -59,18 +59,26 @@ let donationCenter
 
 saveDonationCenterForm.addEventListener("submit", (event) =>{
     event.preventDefault();
-    const {name, city,zipCode, street, neighborhood, state, number} = saveDonationCenterForm.elements
+    const {name, city,zipCode, street, neighborhood, stateCountry, number} = saveDonationCenterForm.elements
     donationCenter = {
       name: name?.value,
       city: city?.value,
       zipCode: zipCode?.value,
       street: street?.value,
       neighborhood: neighborhood?.value,
-      state: state?.value,
+      state: stateCountry?.value,
       number: number?.value
     }
 
-    if(zipCode.value && zipCode.value !== '' &&  !donationCenter.name){
+    if(
+    !name?.value ||
+    !city?.value ||
+    !zipCode?.value ||
+    !street?.value ||
+    !neighborhood?.value ||
+    !stateCountry?.value ||
+    !number?.value
+    ){
       alert("Preencha todos os campos")
       return;
     }
@@ -85,7 +93,7 @@ saveDonationCenterForm.addEventListener("submit", (event) =>{
   
     const inputDonationCenter = document.getElementById('inputField');
     inputDonationCenter.value = donationCenter.name;
-
+    inputDonationCenter.donationCenterId = donationCenter.id;
     const modalDiv = document.getElementById('modal-register-donation-center');
     modalDiv.style.display = "none";
   }
