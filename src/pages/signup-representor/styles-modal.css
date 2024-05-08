@@ -1,0 +1,244 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(235, 55, 56, 0.7);
+}
+.modal-content {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.modal-content__div {
+  max-width: 700px;
+  min-width: 320px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #33a0ab;
+}
+.modal-content__title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.modal-content__text {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.register-section__form {
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.register-section__button-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.register-section__button-div__cancel {
+  background-color: #eb3738;
+  border: 2px solid #514747;
+  width: 140px;
+  height: 50px;
+  margin-top: 10%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.register-section__button-div__confirm {
+  background-color: #33a0ab;
+  border: 2px solid #514747;
+  width: 140px;
+  height: 50px;
+  margin-top: 10%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.modal-delete-account__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-delete-account__body__content {
+  background: #ffffff;
+  padding: 1%;
+  border-radius: 10px;
+  border: 2px solid #33a0ab;
+}
+
+.modal-content__navigate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.modal-navigate-content__div {
+  max-width: 300px;
+  height: 100%;
+  background-color: #eb3738;
+  padding: 10px;
+}
+
+.lateral-menu-content__close {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 30px;
+}
+
+.register-section__button-div__cancel-schedule {
+  background-color: #eb3738;
+  border: 2px solid #514747;
+  width: 140px;
+  height: 50px;
+  margin-top: 10%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.register-section__button-div__confirm-schedule {
+  background-color: #33a0ab;
+  border: 2px solid #514747;
+  width: 140px;
+  height: 50px;
+  margin-top: 10%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.modal-content__div-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content__div-button__cancel {
+  width: 40%;
+  background-color: #eb3738;
+  border: 2px solid #514747;
+  height: 50px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.modal-content__div-button__confirm {
+  width: 40%;
+  background-color: #33a0ab;
+  border: 2px solid #514747;
+  height: 50px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.modal-donation-info__content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #33a0ab;
+}
+.modal-donation-info__content__title {
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
+  color: #514747;
+}
+.modal-donation-info__content__text {
+  font-size: 1;
+  color: #514747;
+  max-width: 300px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.modal-donation-info__content__text > b {
+}
+.donation-modal-status {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.modal-donation-info__content__button-close {
+  background: none;
+  border: none;
+  margin-left: 95%;
+  font-size: 20px;
+  font-weight: 400;
+  color: #eb3738;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  color: #eb3738;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.input-modal {
+  width: 90%;
+}
+
+.modal-content__footer-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  padding: 5%;
+}

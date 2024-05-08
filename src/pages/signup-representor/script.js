@@ -12,7 +12,6 @@
 //     } 
 // }
 
-
 const getDatabase = () =>  {
   const databaseString = localStorage.getItem('base-blood-user-db');
   return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
@@ -36,8 +35,13 @@ const dropdownList = document.getElementById('dropdownList');
 
 
 const openModalCreateDonationCenter = () => {
-  
+  const modalEditSchedule = document.getElementById("modal-register-donation-center");
+   modalEditSchedule.style.display = "block";
 }
+  // const modalEditSchedule = document.getElementById("modal-register-donation-center");// REMOVE THIS LINE
+  //  modalEditSchedule.style.display = "block"; // REMOVE THIS LINE
+
+
 // Função para preencher a lista suspensa com base nos itens disponíveis
 function populateDropdown(donationCentersName) {
     dropdownList.innerHTML = '';
@@ -81,6 +85,7 @@ inputField.addEventListener('blur', () => {
     }, 100);
 });
 
+
 // Mostra a lista suspensa quando o campo de entrada ganha foco
 inputField.addEventListener('focus', () => {
     filterItems();
@@ -88,3 +93,10 @@ inputField.addEventListener('focus', () => {
 
 // Inicializa a lista suspensa com todos os itens disponíveis
 populateDropdown(donationCentersName);
+
+const modalClose = document.getElementById('edit-schedule-modal-close__cancel');
+
+modalClose.addEventListener('click', () => {
+  const modalEditSchedule = document.getElementById("modal-register-donation-center");
+  modalEditSchedule.style.display = "none";
+})
