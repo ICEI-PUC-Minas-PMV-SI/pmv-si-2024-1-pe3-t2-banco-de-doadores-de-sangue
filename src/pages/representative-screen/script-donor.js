@@ -14,7 +14,7 @@ function getDatabase() {
   // Função para listar todos os usuários
   function listUsers() {
     const database = getDatabase();
-    return database;
+    return database.users;
   }
 
   function redirectRepresentitiveToDonorInfo(donorId) {

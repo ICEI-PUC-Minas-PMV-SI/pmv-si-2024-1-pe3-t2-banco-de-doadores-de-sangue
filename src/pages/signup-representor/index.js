@@ -54,6 +54,7 @@ const getPayloadFromEvent = (event) => {
   const phone = event.target.phone.value;
   const password = event.target.password.value;
   const passwordConfirm = event.target.passwordConfirm.value;
+  const donationCenterId = document.getElementById('inputField')?.donationCenterId
   return {
     name,
     phone,
@@ -61,7 +62,8 @@ const getPayloadFromEvent = (event) => {
     ddd,
     password,
     passwordConfirm,
-    isRepresentative: false,
+    isRepresentative: true,
+    donationCenterId
   };
 };
 
@@ -99,11 +101,9 @@ const signupButtonOnClick = () => {
 document.addEventListener("DOMContentLoaded", () => {
   verifyUserIsAlreadyLogged();
   
-  // Registrando função callback para o formulário
   const form = document.getElementById("signup-form");
   form.addEventListener("submit", signupFormOnSubmit);
 
-  // Registrando função callback para o botão
   const button = document.querySelector('button[name="signup-button"]');
   button.addEventListener("click", signupButtonOnClick);
 });

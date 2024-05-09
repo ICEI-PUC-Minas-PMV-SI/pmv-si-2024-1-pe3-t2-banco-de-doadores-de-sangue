@@ -28,6 +28,10 @@
     href="../../styles/components/short-text-image/styles.css" />
   <link rel="stylesheet"
     href="./styles.css" />
+  <link rel="stylesheet"
+    href="./select.css" />
+  <link rel="stylesheet"
+    href="./styles-modal.css" />
 </head>
 
 <body>
@@ -35,7 +39,7 @@
     <div class="main-header__image"></div>
     <div class="main-header__image-color"></div>
     <div class="main-header__content">
-      <h1 class="main-header__content__title">Cadastro</h1>
+      <h1 class="main-header__content__title">Cadastro de representantes</h1>
       <div class="main-header__logo-container">
         <object data="../../public/assets/svg/logo.svg"></object>
       </div>
@@ -43,6 +47,55 @@
     </div>
   </header>
   <main class="register">
+    <div id="modal-register-donation-center"
+      class="modal">
+      <div class="modal-content">
+        <div class="modal-content__div">
+          <h1 class="modal-content__title">Registrar hemocentro</h1>
+
+          <form class="modal-content__div-button"
+            id="modal-register-donation-center-form">
+            <input class="primary-input input-modal"
+              placeholder="Nome do hemocentro"
+              name="name"
+              onkeydown="removeErrorOnKeydown(event)" />
+            <input class="primary-input input-modal"
+              placeholder="Cep"
+              name="zipCode" />
+            <input class="primary-input input-modal"
+              placeholder="Numero"
+              name="number" />
+            <input class="primary-input input-modal"
+              placeholder="cidade do hemocentro"
+              name="city" />
+            <input class="primary-input input-modal"
+              placeholder="Rua"
+              name="street"
+              onkeydown="removeErrorOnKeydown(event)" />
+            <input class="primary-input input-modal"
+              placeholder="bairro"
+              name="neighborhood"
+              onkeydown="removeErrorOnKeydown(event)" />
+            <input class="primary-input input-modal"
+              placeholder="estado"
+              name="stateCountry"
+              onkeydown="removeErrorOnKeydown(event)" />
+            <div class="modal-content__footer-div">
+              <button class="modal-content__div-button__cancel"
+                id="edit-schedule-modal-close__cancel">
+                Cancelar
+              </button>
+              <button class="modal-content__div-button__confirm"
+                id="register-donation-center-confirm"
+                type="submit">
+                Salvar
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="register-section">
       <h2 class="register-section__title">Entre com seus dados abaixo</h2>
       <form class="register-section__form"
@@ -83,6 +136,19 @@
           placeholder="Confirmar senha"
           name="passwordConfirm"
           onkeydown="removeErrorOnKeydown(event)" />
+
+        <label id='dropdown-label'
+          for="dropdown">Qual o seu banco de sangue?</label>
+        <div class="dropdown">
+          <input type="text"
+            class="primary-input"
+            id="inputField"
+            placeholder="Digite para filtrar...">
+          <div id="dropdownList"
+            class="dropdown-list">
+          </div>
+        </div>
+
         <div class="register-section__form__footer">
           <p>Já é doador?</p>
           <a class="register-section__form__footer__text"
@@ -110,6 +176,9 @@
   <script src="../../commons/signin/index.js"></script>
   <script src="../../commons/utils/verifyUser.js"></script>
   <script src="index.js"></script>
+  <script src="script.js"></script>
+  <script src="./script-modal.js"></script>
+  <script src="./model-representor.js"></script>
 </body>
 
 </html>
