@@ -236,7 +236,7 @@ if(user.bloodType){
 
 const donationData = document.getElementsByClassName('donation-data')[0];
 
-if(!user.bloodType || !user.bornAt || !user.isHealthNow || !user.city){
+if(!user.bloodType || !user.bornAt || !user.city){
   renderUserIsNotADonator(donationData, user.id)
 }
 else if(!user.donations){
