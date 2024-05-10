@@ -86,8 +86,9 @@ const signupFormOnSubmit = (event) => {
   };
 
   createUser(user);
-
-  window.location.assign("../signin/index.html");
+  signInUser(user);
+  
+  window.location.assign("../additional-information/index.html");
 };
 
 const signupButtonOnClick = () => {

@@ -10,7 +10,7 @@ const saveDatabase = (database) => {
 
 function deleteDonation(userId, donationId) {
   const database = getDatabase();
-  const user = database.find(user => user.id === userId);
+  const user = database.users.find(user => user.id === userId);
 
   const donationIndex = user.donations.findIndex(donation => donation.id === donationId);
   if (donationIndex !== -1) {
@@ -21,7 +21,7 @@ function deleteDonation(userId, donationId) {
 
 function editDonation(userId, donationId, updatedDonation) {
   const database = getDatabase();
-  const user = database.find(user => user.id === userId);
+  const user = database.users.find(user => user.id === userId);
   const donation = user ? user.donations.find(donation => donationId === donation.id) : {}
   if (donation) {
     Object.assign(donation, updatedDonation);
@@ -32,12 +32,12 @@ function editDonation(userId, donationId, updatedDonation) {
 
 function editUser(userId, updatedUser) {
   const database = getDatabase();
-  const user = database.find(user => user.id === userId);
+  const user = database.users.find(user => user.id === userId);
   if (user) {
     Object.assign(user, updatedUser);
     saveDatabase(database);
   }
-  return database.find(user => user.id === userId);
+  return database.users.find(user => user.id === userId);
 }
 
 const renderUserIsNotADonator = (donationData) => {
@@ -257,7 +257,7 @@ if (user.bornAt) {
 if (user.city) {
   const renderUserCity = document.createElement('p')
   renderUserCity.classList.add("donor-info__data__text");
-  renderUserCity.innerHTML = `<b>City: </b>${user.city}`
+  renderUserCity.innerHTML = `<b>Cidade: </b>${user.city}`
   donorInfoData.appendChild(renderUserCity)
 }
 
@@ -279,7 +279,7 @@ if (user.bloodType) {
 
 const donationData = document.getElementsByClassName('donation-data')[0];
 
-if (!user.bloodType || !user.bornAt || !user.isHealthNow || !user.city) {
+if (!user.bloodType || !user.bornAt || !user.city) {
   renderUserIsNotADonator(donationData)
 }
 else if (!user.donations) {
