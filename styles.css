@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  float: left;
   z-index: 2;
 }
 
@@ -84,7 +84,7 @@
   align-items: center;
 }
 
-.main-header__logo-container > object {
+.main-header__logo-container>object {
   margin: auto;
 }
 
@@ -125,7 +125,7 @@
   border-bottom: 1px solid #33a0ab;
 }
 
-.register-section__login-container > a {
+.register-section__login-container>a {
   color: #33a0ab;
   text-decoration: none;
 }
@@ -190,7 +190,7 @@
   align-items: center;
 }
 
-.donation-process-section > p {
+.donation-process-section>p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -225,7 +225,7 @@
   justify-content: center;
 }
 
-.donation-process-section__content-container > .short-text-image {
+.donation-process-section__content-container>.short-text-image {
   margin: 0 1rem 2rem;
 }
 
@@ -266,7 +266,7 @@
   max-width: 23.75rem;
 }
 
-body > footer {
+body>footer {
   margin-bottom: 2rem;
 }
 
@@ -285,9 +285,21 @@ body > footer {
   }
 
   .about-us-section {
+    margin-top: 260px;
     padding-top: 4rem;
     height: auto;
     justify-content: space-around;
     flex-direction: row;
   }
+}
+
+#loginButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 7rem;
+}
+
+#singupButton {
+  margin-top: 30px;
+  height: 7rem;
 }
