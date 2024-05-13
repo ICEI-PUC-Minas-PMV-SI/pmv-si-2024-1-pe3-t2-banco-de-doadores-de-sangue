@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="./src/styles/components/button/styles.css" />
   <link rel="stylesheet" href="./src/styles/components/short-text-image/styles.css" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styleModal.css" />
+  <link rel="stylesheet" href="./src/styles/shared.css" />
+  <link rel="stylesheet" href="./src/styles/components/menu-navegation-desktop/styles.css" />
 </head>
 
 <body>
@@ -18,6 +21,48 @@
     <div class="main-header__image"></div>
     <div class="main-header__image-color"></div>
     <div class="main-header__content">
+
+      <input type="checkbox" id="chec" />
+      <label for="chec">
+        <h2>☰ Menu de Opções</h2>
+      </label>
+      <nav>
+        <ul>
+          <li>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+          </li>
+
+          <li>
+            <a class="lateral-menu-content__item"
+              onclick="window.location.href='/src/pages/representative-screen'">Canal dos representantes</a>
+          </li>
+
+
+          <li>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'">
+              Quem pode doar?</a>
+          </li>
+
+          <li>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'">Processo
+              de doação</a>
+          </li>
+
+          <li>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e
+              verdades</a>
+          </li>
+
+          <li>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+          </li>
+
+          <li>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/index.html'">Voltar para a home</a>
+          </li>
+        </ul>
+      </nav>
+      <br><br><br>
       <h1 class="main-header__content__title">Já salvou uma vida hoje?</h1>
       <span class="main-header__content__text">Faça isso juntando-se ao</span>
     </div>
@@ -28,11 +73,6 @@
   </header>
   <section class="register-section">
     <h2 class="register-section__title">Banco de doadores de sangue</h2>
-    <button class="primary-button" onclick="window.location.href='/src/pages/signup/'">Cadastre-se</button>
-    <div class="register-section__login-container">
-      <span>Já é doador?</span>
-      <a onclick="window.location.href='/src/pages/signin/'">Faça seu login!</a>
-    </div>
   </section>
   <section class="motives-section section-default">
     <h3 class="section-title">Por que doar?</h3>
@@ -72,7 +112,7 @@
         </p>
       </div>
     </div>
-    <button class="primary-button"onclick="window.location.href='/src/pages/why-donate'">Saiba mais!</button>  
+    <button class="primary-button" onclick="window.location.href='/src/pages/why-donate'">Saiba mais!</button>
   </section>
   <section class="allowed-donation-section section-default">
     <div class="allowed-donation-section__intro">
@@ -191,19 +231,30 @@
         de órgãos.
       </p>
       <button class="secondary-button" onclick="window.location.href='/src/pages/blood-types'">Saiba mais!</button>
-      </article>
-    </section>
-    <section class="about-us-section section-default">
-      <article>
-         <h3 class="section-title">Quem somos</h3>
-         <p class="generic-text">
+    </article>
+  </section>
+
+
+  <div class="register-section__login-container">
+    <button class=" primary-button" id="singupButton" onclick="window.location.href='/src/pages/signup/'">Cadastre-se,
+      como representante</button>
+    <button class="primary-button" id="loginButton" window.location.href='/src/pages/signup/'>Cadastre-se, como
+      doador</button>
+    <span>Já é doador, ou representante?</span>
+    <a onclick=" window.location.href='/src/pages/signin/'">Faça seu login!</a>
+  </div>
+
+  <section class="about-us-section section-default">
+    <article>
+      <h3 class="section-title">Quem somos</h3>
+      <p class="generic-text">
         Somos estudantes de sistemas de informação na puc minas interessados no tema. Desenvolvemos essa aplicação em
         equipe no primeiro semestre da universidade. Você pode saber mais sobre nós clicando no botão abaixo.
-        </p>
-      </article>
-      <button class="primary-button" onclick="window.location.href='/src/pages/about-us'">Saiba mais!</button>
-    </section>
-    <footer class="generic-text">© 2023 Banco de sangue</footer>
-  </body>
+      </p>
+    </article>
+    <button class="primary-button" onclick="window.location.href='/src/pages/about-us'">Saiba mais!</button>
+  </section>
+  <footer class="generic-text">© 2023 Banco de sangue</footer>
+</body>
 
 </html>
