@@ -109,19 +109,18 @@
 }
 
 .register-section__login-container {
-  margin: auto;
-  height: 3rem;
+  margin: 2rem auto; 
+  height: auto; 
   width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-  margin-bottom: 1.5rem;
   border-bottom: 1px solid #33a0ab;
 }
 
@@ -294,12 +293,11 @@ body>footer {
 }
 
 #loginButton {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 7rem;
+  margin-top: 20px; 
+  margin-bottom: 10px; 
 }
 
 #singupButton {
-  margin-top: 30px;
-  height: 7rem;
+  margin-top: 10px; 
+  margin-bottom: 20px; 
 }
