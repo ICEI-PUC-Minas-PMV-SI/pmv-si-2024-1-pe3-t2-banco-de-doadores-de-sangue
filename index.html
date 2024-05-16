@@ -71,8 +71,18 @@
     </div>
   </header>
   <section class="register-section">
-    <h2 class="register-section__title">Banco de doadores de sangue</h2>
+    <h2 class="register-section__title" id="title">Banco de doadores de sangue</h2>
   </section>
+
+  <div class="register-section__login-container">
+    <button class=" primary-button" id="singupButton" onclick="window.location.href='/src/pages/signup-representor/'">Cadastre-se,
+      como representante</button>
+    <button class="primary-button" id="loginButton" onclick="window.location.href='/src/pages/signup/'">Cadastre-se, como
+      doador</button>
+    <span>Já é doador, ou representante?</span>
+    <a onclick=" window.location.href='/src/pages/signin/'">Faça seu login!</a>
+  </div>
+
   <section class="motives-section section-default">
     <h3 class="section-title">Por que doar?</h3>
     <div class="motives-section__content-container">
@@ -257,3 +267,4 @@
 </body>
 
 </html>
+
