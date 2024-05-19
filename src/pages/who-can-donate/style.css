@@ -141,3 +141,9 @@ p {
   color: #0b972e;
   padding: 20px;
 }
+
+header {  
+  background-image: url("../../../src/public/assets/doc-images/woman-picture.jpeg");
+  background: #eb3738;
+
+}
