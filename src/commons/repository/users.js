@@ -1,14 +1,13 @@
 const userDBKey = 'base-blood-user-db';
 
 const getAllUsers = () => {
-  const data = getItemLocalStorage(userDBKey)?.users || [];
-  return data;
+  const data = getItemLocalStorage(userDBKey);
+  return data?.users || [];
 };
 
 const updateAllUsers = (users) => {
-  console.log('aquiiii')
-  const body = getItemLocalStorage(userDBKey)
-  body.users = users
+  let body = getItemLocalStorage(userDBKey)
+  body.users = users  
   setItemLocalStorage(userDBKey, body);
 };
 
@@ -27,8 +26,9 @@ const deleteUser = (userId) => {
 
 const findUserByEmail = (email) => {
   const users = getAllUsers();
+  console.log('>>>>>>>>>>', users)
   return users.find((user) => user.email === email);
-};
+};    
 
 const findUserById = (userId) => {
   const users = getAllUsers();
