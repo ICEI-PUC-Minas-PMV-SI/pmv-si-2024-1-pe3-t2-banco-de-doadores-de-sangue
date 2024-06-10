@@ -11,7 +11,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url("../../public/assets/doc-images/woman-picture.jpeg");
+  background-image: url('../../public/assets/doc-images/woman-picture.jpeg');
   background-size: cover;
   z-index: 1;
 }
@@ -151,8 +151,8 @@
   color: #514747;
   cursor: pointer;
 }
-.register-section__form__p{
-  margin-top:4px;
+.register-section__form__p {
+  margin-top: 4px;
 }
 .donation-data__container__donation-card__date {
   padding: 5px;
@@ -189,46 +189,48 @@
 }
 
 @media (min-width: 1000px) {
-  body{
+  body {
     display: flex;
     flex-direction: row;
-    max-width:100vw;
-
+    max-width: 100vw;
   }
   .main-header {
     display: none;
   }
-  .main-menu{
+  .main-menu {
     margin-left: 1rem;
     margin-right: 1rem;
     width: 50vw;
-    
   }
-  .main-menu__image, .main-menu__image-color{
+  .main-menu__image,
+  .main-menu__image-color {
     display: none;
   }
-  .main-menu__title{
+  .main-menu__title {
     color: #eb3738;
   }
 
-  .main-menu__action__div{
+  .main-menu__action__div {
   }
-  .main-menu__action__button{
+  .main-menu__action__button {
     border: 2px solid #33a0ab;
-    height:100px;
+    height: 100px;
     width: 79px;
   }
-  .main-menu__action__text{
+  .main-menu__action__text {
     color: #514747;
     font-size: 16px;
-
   }
-  .main{
-    width:80vw;
+  .main {
+    width: 80vw;
   }
-  .donation-data__container{
-    max-height:50vh;
+  .donation-data__container {
+    max-height: 50vh;
     overflow: auto;
   }
+}
 
+.date-and-time-div {
+  display: flex;
+  flex-direction: column;
 }

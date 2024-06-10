@@ -166,3 +166,10 @@ logoutButton.addEventListener("click", function() {
 })
 
 
+// AGENDAR DOAÇÃO
+const modalScheduleDonation = document.getElementById('modal-schedule-donation')
+const openModalScheduleDonation = document.getElementById('open-modal-schedule-donation')
+openModalScheduleDonation.addEventListener("click", function() {
+  console.log('aqui')
+  modalScheduleDonation.style.display = "block";
+})
