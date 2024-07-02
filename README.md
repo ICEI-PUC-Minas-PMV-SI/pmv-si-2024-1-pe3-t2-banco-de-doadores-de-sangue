@@ -13,7 +13,9 @@
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
-link da solução: https://banco-de-sangue.netlify.app/
+Link da solução: https://banco-de-sangue.netlify.app/
+
+Link da documentação: https://docs.google.com/document/d/1b8PBrqarAmCulojliJYCgbyJtSYhA9QR/edit?pli=1
 
 ## Integrantes
 
